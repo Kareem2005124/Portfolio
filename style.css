@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=New+Amsterdam:regular);
+@import url(https://fonts.googleapis.com/css?family=Pixelify+Sans:regular,500,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "New Amsterdam";
+}
+
+header {
+  display: flex;
+
+  justify-content: center;
+  justify-content: space-around;
+  padding: 50px;
+  background-image: linear-gradient(violet, yellow);
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+  border: 2px;
+  border-style: solid;
+  padding: 10px;
+
+  border-radius: 10px;
+  background-image: linear-gradient(violet, yellow);
+  box-shadow: 10px 10px;
+  width: 8vh;
+  min-height: 2vh;
+  font-size: larger;
+  display: flex;
+
+  justify-content: center;
+}
+main {
+  background-image: linear-gradient(violet, yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-image: linear-gradient(yellow, orange);
+  height: 14vh;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+h1 {
+  color: blueviolet;
+  box-shadow: 10px 10px 10px;
+  padding: 10px;
+  font-family: "Pixelify Sans";
+}
+
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+
+  column-gap: 1px 1px 1px;
+  gap: 10px;
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-image: linear-gradient(yellow, violet);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+h2 {
+  color: blueviolet;
+  box-shadow: 10px 10px 10px;
+  padding: 10px;
+  padding: 10px;
+}
+
+img {
+  border: 10px;
+  border-style: solid;
+  border-radius: 20px;
+  background-image: linear-gradient(yellow, violet);
+  width: 30vh;
+  color: blueviolet;
+  box-shadow: 10px 10px 10px;
+}
+
+button {
+  padding: 10px;
+}
